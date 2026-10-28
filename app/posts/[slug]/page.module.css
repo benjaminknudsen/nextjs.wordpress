@@ -1,0 +1,73 @@
+.main {
+  max-width: 52rem;
+  margin-inline: auto;
+  overflow-wrap: anywhere;
+}
+
+.article {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.article h1 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.date {
+  color: #555555;
+}
+
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.content ul,
+.content ol {
+  padding-left: 1.5rem;
+}
+
+.content img,
+.content video {
+  max-width: 100%;
+  height: auto;
+}
+
+.content iframe {
+  max-width: 100%;
+}
+
+.content a,
+.backLink {
+  color: inherit;
+}
+
+.backLink {
+  display: inline-block;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.categories li {
+  padding: 0.125rem 0.625rem;
+  border: 1px solid #dddddd;
+  border-radius: 999px;
+  font-size: 0.875rem;
+}
